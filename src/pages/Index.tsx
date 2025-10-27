@@ -38,23 +38,27 @@ const Index = () => {
 
   return (
     <div className="min-h-screen cosmic-gradient stars-bg relative overflow-hidden">
-      <img 
-        src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/2fab8d66-f573-4a77-8e2c-28ba6e8a8210.jpg" 
-        alt="planet"
-        className="absolute top-20 right-10 w-48 h-48 object-contain animate-float opacity-60 pointer-events-none"
-      />
-      <img 
-        src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/50414ef8-1d2c-4308-9fa0-d676a616d4be.jpg" 
-        alt="planet"
-        className="absolute bottom-40 left-20 w-32 h-32 object-contain animate-float opacity-50 pointer-events-none"
-        style={{ animationDelay: '1s' }}
-      />
-      <img 
-        src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/43ff8cd5-175f-4a07-9df6-450ab2c924bd.jpg" 
-        alt="rocket"
-        className="absolute top-1/2 left-5 w-24 h-24 object-contain animate-float opacity-70 pointer-events-none"
-        style={{ animationDelay: '2s' }}
-      />
+      <div className="absolute top-20 right-10 w-48 h-48 animate-float opacity-60 pointer-events-none">
+        <img 
+          src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/2fab8d66-f573-4a77-8e2c-28ba6e8a8210.jpg" 
+          alt="planet"
+          className="w-full h-full object-contain mix-blend-lighten"
+        />
+      </div>
+      <div className="absolute bottom-40 left-20 w-32 h-32 animate-float opacity-50 pointer-events-none" style={{ animationDelay: '1s' }}>
+        <img 
+          src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/50414ef8-1d2c-4308-9fa0-d676a616d4be.jpg" 
+          alt="planet"
+          className="w-full h-full object-contain mix-blend-lighten"
+        />
+      </div>
+      <div className="absolute top-1/2 left-5 w-24 h-24 animate-float opacity-70 pointer-events-none" style={{ animationDelay: '2s' }}>
+        <img 
+          src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/43ff8cd5-175f-4a07-9df6-450ab2c924bd.jpg" 
+          alt="rocket"
+          className="w-full h-full object-contain mix-blend-lighten"
+        />
+      </div>
       
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-4 py-4">
@@ -108,12 +112,13 @@ const Index = () => {
         {activeSection === 'main' && (
           <div className="space-y-8 animate-fade-in">
             <section className="text-center py-20 relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/43ff8cd5-175f-4a07-9df6-450ab2c924bd.jpg" 
-                alt="rocket"
-                className="absolute -top-10 right-1/4 w-32 h-32 object-contain animate-float opacity-80"
-                style={{ animationDelay: '0.5s' }}
-              />
+              <div className="absolute -top-10 right-1/4 w-32 h-32 animate-float opacity-80" style={{ animationDelay: '0.5s' }}>
+                <img 
+                  src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/43ff8cd5-175f-4a07-9df6-450ab2c924bd.jpg" 
+                  alt="rocket"
+                  className="w-full h-full object-contain mix-blend-lighten"
+                />
+              </div>
               <div className="relative inline-block mb-6">
                 <div className="absolute inset-0 bg-primary blur-3xl opacity-50 animate-pulse-glow"></div>
                 <h2 className="relative text-6xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-float">
@@ -137,12 +142,13 @@ const Index = () => {
             </section>
 
             <section className="grid md:grid-cols-3 gap-6 relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/2fab8d66-f573-4a77-8e2c-28ba6e8a8210.jpg" 
-                alt="planet"
-                className="absolute -bottom-20 -right-20 w-64 h-64 object-contain animate-float opacity-40 pointer-events-none"
-                style={{ animationDelay: '1.5s' }}
-              />
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 animate-float opacity-40 pointer-events-none" style={{ animationDelay: '1.5s' }}>
+                <img 
+                  src="https://cdn.poehali.dev/projects/b1b62870-3fc6-4202-8df8-c67eebcd01d0/files/2fab8d66-f573-4a77-8e2c-28ba6e8a8210.jpg" 
+                  alt="planet"
+                  className="w-full h-full object-contain mix-blend-lighten"
+                />
+              </div>
               
               <Card className="bg-card/50 backdrop-blur border-border hover:border-primary transition-all hover:scale-105">
                 <CardContent className="p-6 text-center">
